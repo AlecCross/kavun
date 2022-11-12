@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            width: 650px;
+            height: 500px;
+            perspective: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .watermelon {
+            width: 510px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            transform: rotateY(-15deg) rotateZ(20deg);
+        }
+
+        .watermelon::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            bottom: 0px;
+            right: 0px;
+            border-radius: 300px 500px 330px 500px;
+            background-color: #1a360b;
+        }
+
+        .watermelon::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            bottom: 10px;
+            left: 0;
+            border-bottom: 20px solid #3d6e23;
+            background-color: rgb(153, 31, 31);
+            border-radius: 50%;
+
+        }
+
+        .watermelon span {
+            position: absolute;
+            background-color: #000;
+            width: 20px;
+            height: 20px;
+            z-index: 2;
+            border-radius: 1px 100px 100px 100px;
+            transform: rotateY(-15deg) rotateZ(40deg);
+        }
+
+        .watermelon span::after {
+            content: "";
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            width: 10px;
+            height: 4px;
+            left: 7px;
+            top: 7px;
+            border-radius: 40%;
+        }
+
+        .watermelon span:nth-child(1) {
+            left: 30%;
+            top: 35%;
+        }
+
+        .watermelon span:nth-child(2) {
+            left: 37%;
+            top: 40%;
+        }
+
+        .watermelon span:nth-child(3) {
+            left: 43%;
+            top: 44%;
+        }
+
+        .watermelon span:nth-child(4) {
+            left: 49%;
+            top: 49%;
+        }
+
+        .watermelon span:nth-child(5) {
+            left: 54%;
+            top: 50%;
+        }
+
+        .watermelon span:nth-child(6) {
+            left: 59%;
+            top: 49%;
+        }
+
+        .watermelon span:nth-child(7) {
+            left: 64%;
+            top: 44%;
+        }
+
+        .watermelon span:nth-child(8) {
+            left: 69%;
+            top: 40%;
+        }
+
+        .watermelon span:nth-child(9) {
+            left: 75%;
+            top: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="watermelon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <img src="https://latifundist.com/media/pamyatki/540-370-s/00/00/117/arbuz-99706.jpg" alt="кавун" />
+</body>
+
+</html>
